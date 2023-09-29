@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>main index</title>
+    <link rel="stylesheet" href="./input.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    
+    <style>
+
+        .inter{
+            font-family: 'Inter', sans-serif; 
+            font-weight: 600;
+        }
+        .inter1{
+            font-family: 'Inter', sans-serif; 
+            font-weight: 700;
+        }
+        .inter2{
+            font-family: 'Inter', sans-serif; 
+            font-weight: 400;
+            color: gray;
+        }
+        .extra {
+            display: none;
+        }
+        .list.expanded > .extra {
+            display: flex;
+        }
+        .list > .more {
+             cursor: pointer;
+        }
+        .list > .less {
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 1. Navigation bar -->
+    <div class="absolute w-full ">
+        <img src="./svg nav1/Grid.svg" alt="background image" class="">
+    </div>
+    <!-- -->
+    <div class="container justify-between relative bg-white xs:w-1/5 sm:w-1/4 md:w-1/3 flex min-w-full shadow-md">
+        <div class="container flex space-x-6 m-1 ">
+            <!-- 1st change.. -->
+            <div class=" flex self-center items-center hover:bg-slate-100 ml-1 p-0.5 py-1 rounded-md ">
+                <img src="./svg nav1/logoMain.svg" class="flex items-center h-8 w-8 " alt="">
+                <div class="self-center">
+                    <span class="inter1 ml-2 self-center whitespace-nowrap">Safety Audit</span>
+                </div>
+            </div>
+            <!-- 1st change.. -->
+
+            <!-- 2nd change -->
+            <div class="h-6 w-1 self-center">
+                <img src="./svg nav1/Separator.svg" class="h-6 w-1 self-center" alt="">
+            </div>
+            
+            <div class="flex justify-evenly items-center space-x-0 py-1">
+                <img src="./svg nav1/mobile-alt-solid.svg" class="h-8 w-7 hover:bg-slate-100 p-1 rounded-md" alt="">
+                <img src="./svg nav1/tablet.svg" class="h-7 w-5.5 hover:bg-slate-100 p-1 rounded-md" alt="">
+                <img src="./svg nav1/desktop-solid.svg" class="h-7 w-7 hover:bg-slate-100 p-1 rounded-md" alt="">
+            </div>
+            <div class="flex space-x-3">
+                <div class="rounded-full flex space-x-1 h-11 self-center border items-center border-gray-300 py-1 px-1 justify-center">
+                    <button id="button1" class="flex items-center space-x-2 rounded-full px-6 py-1 border content-center border-slate-300 hover:border-indigo-300" 
+                    style="background: linear-gradient(97.35deg, #5136F4 0%, #0B8DF4 108.05%);">
+                        <img src="./svg nav1/designScript svg/Vector.svg" class="py-1 icon11">
+                        <span class="inter font-semibold text-sm text-white">Design</span>
+                    </button>
+                    <button id="button2" class="flex space-x-2 rounded-full content-center px-6 py-1.5">
+                        <img src="./svg nav1/designScript svg/Vector-1.svg" class="py-1 icon21" alt="">
+                        <span class="inter1 font-bold text-sm">Script</span>
+                    </button>
+                </div>
+                <div class="flex justify-center space-x-2 my-1  ">
+    
+                    <img src="./svg nav1/shape.svg" class="w-auto h-auto hover:bg-slate-100 p-2 rounded-md " alt="">
+                    <img src="./svg nav1/shape-1.svg" class="w-auto h-auto hover:bg-slate-100 p-2 rounded-md" alt="">
+                    <!-- 3rd change -->
+                    <img src="./svg nav1/Separator.svg" class="h-6 w-1 self-center " alt="">
+                    <img src="./svg nav1/cut.svg" class="w-auto h-auto hover:bg-slate-100 p-2 rounded-md" alt="">
+                    <img src="./svg nav1/copy.svg" class="w-auto h-auto hover:bg-slate-100 p-2 rounded-md" alt="">
+                    <img src="./svg nav1/Add+.svg" class="w-auto h-auto hover:bg-slate-100 p-2 rounded-md" alt="">
+                </div>
+            </div>
+          
+        </div>
+        <!-- 4th change -->
+        <img src="./svg nav1/closeicon.svg" class=" h-4 w-4 self-center mr-2 ml-14" alt="">
+    </div>
+   
+    <!-- 2. Main section -->
+
+    <!-- main -->
+    <div class=" container flex justify-between m-0.5 h-full  relative" >
+        <!-- <div class="absolute w-full ">
+            <img src="./svg nav1/Grid.svg" alt="background image" class="">
+        </div> -->
+        
+        <!-- toolbar -->
+        <div class="flex content-center h-1/4 w-auto my-9 ml-4 top-1/4 right-80 left-0 relative bg-white shadow-md"> 
+               
+            <div class="list flex-row space-y-2 mt-4 ml-2 mr-2 items-center">
+                <!-- visible icons -->
+               <div class="bydefault flex space-x-3 items-center">
+                <img src="./new_toolbar_icons_svg/Frame 40.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 69.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               <div class="bydefault flex space-x-3 items-center">
+                <img src="./new_toolbar_icons_svg/Form.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 41.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               <div class="bydefault flex space-x-3">
+                <img src="./new_toolbar_icons_svg/Frame 72.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 42.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               <div class="bydefault flex space-x-3">
+                <img src="./new_toolbar_icons_svg/Frame 43.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 70.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               <div class="bydefault flex space-x-3">
+                <img src="./new_toolbar_icons_svg/Frame 44.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 64.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               <div class="bydefault flex space-x-3">
+                <img src="./new_toolbar_icons_svg/Frame 60.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 61.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               <div class="bydefault flex space-x-3">
+                <img src="./new_toolbar_icons_svg/Frame 62.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 63.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               <div class="bydefault flex space-x-3">
+                <img src="./new_toolbar_icons_svg/Frame 47.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 71.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               
+               <!--more-->
+               <div class="more rounded-md bg-slate-100 hover:bg-blue-100 px-2 py-2 w-fit shadow-md">
+                <img src="./new_toolbar_icons_svg/dropdown1.svg" class="h-3 px-5" alt="">
+               </div>
+
+               <!-- hidden icons -->
+               <div class="extra flex space-x-3">
+                <img src="./new_toolbar_icons_svg/Frame 46.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 45.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               <div class="extra flex space-x-3">
+                <img src="./new_toolbar_icons_svg/Frame 48.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 49.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               <div class="extra flex space-x-3">
+                <img src="./new_toolbar_icons_svg/Frame 50.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 51.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               <div class="extra flex space-x-3">
+                <img src="./new_toolbar_icons_svg/Frame 52.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 59.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               <div class="extra flex space-x-3">
+                <img src="./new_toolbar_icons_svg/Frame 58.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 57.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               <div class="extra flex space-x-3">
+                <img src="./new_toolbar_icons_svg/Frame 56.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 55.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               <div class="extra flex space-x-3">
+                <img src="./new_toolbar_icons_svg/Frame 54.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 53.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               <div class="extra flex space-x-3">
+                <img src="./new_toolbar_icons_svg/Frame 66.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 65.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               <div class="extra flex space-x-3">
+                <img src="./new_toolbar_icons_svg/Frame 68.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+                <img src="./new_toolbar_icons_svg/Frame 67.svg" class="hover:bg-slate-100 h-8 w-8 p-0.5 rounded-md" alt="">
+               </div>
+               <!-- less -->
+               <div class="less rounded-md bg-slate-100 hover:bg-blue-100 px-2 py-2 w-fit shadow-md">
+                <img src="./new_toolbar_icons_svg/dropdown1.svg" class="h-3 px-5" alt="">
+               </div>
+           </div>
+        </div>
+
+        <!-- middle section -->
+        <div class="container my-12 relative xs:w-1/5 sm:w-1/4 md:w-1/3 md:mr-20 right-1/3 ">
+            <img src="./svg nav1/device-image/Devices/Light/iPhone 11 Pro.svg" alt="" class="w-5/3">
+        </div>
+        
+        <!-- right -->
+        <div class="container flex-col justify-between xs:w-1/5 sm:w-1/4 md:w-1/3 lg:w-1/4 xl:w-1/4 space-y-6 h-auto pb-72 max-w-md my-1.5 py-2 px-2 bg-white rounded-sm border border-slate-100 top-0 right-0 absolute shadow-md ">
+            <div class="-ml-2 -mt-3">
+             <div class="flex justify-start  space-x-4 ml-3 my-3">
+                 <img src="./svg nav1/setting nav/3.svg" class="hover:bg-slate-100 p-2 rounded-md" alt="">
+                 <img src="./svg nav1/setting nav/comments.svg" class="hover:bg-slate-100 p-2 rounded-md" alt="">
+                 <img src="./svg nav1/setting nav/history-solid.svg" class="hover:bg-slate-100 p-2 rounded-md" alt="">
+             </div>
+             
+             <img src="./svg nav1/horrizontal_Line 36.svg" class="ml-3 -mt-1" alt="">
+            </div>
+             
+     
+             <div class="ml-1.5">
+                 <span class="inter font-semibold text-2xl ">Form Settings</span>
+             </div>
+             
+             <form class=" w-full mr-4 space-y-4 ml-1.5">
+                 <div class="flex space-x-3 items-center ">
+                    <img src="./svg nav1/checkbox.svg" alt="" class="mt-1">
+                     <label for="checkbox" class="block text-slate-600 font-semibold">Required</label>
+                  </div>
+                 <label class="block max-w-sm space-y-4">
+                   <span class="block text-sm font-medium text-slate-600 ">Name</span>
+                   <div class="ml-2">
+                     <input type="text" value="" placeholder="Name the form" class="inter2 mt-1 block -m-2 px-3 py-2 h-12 w-full bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-500
+                      focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+                     disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+                     invalid:border-pink-500 invalid:text-pink-600
+                     focus:invalid:border-pink-500 focus:invalid:ring-pink-500 
+                   "/>
+                   </div>
+                 </label>
+                 <label class="block max-w-sm space-y-4">
+                     <label for="dropdown" class="block text-gray-600 text-sm font-medium ">Type</label>
+                     <div class="ml-2">
+                         <select id="dropdown" name="dropdown" class=" inter2 form-select mt-1 block px-3 py-2 -m-2 h-12 w-full bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-500
+                         focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+                         disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+                         invalid:border-pink-500 invalid:text-pink-600
+                         focus:invalid:border-pink-500 focus:invalid:ring-pink-500">
+                     </div>
+                         <option disabled selected value="" class="text:slate-400 focus:outline-none" style="color:gray "> Select the type</option>
+                         <option value="" >Option 1</option>
+                         <option value="" >Option 2</option>
+                         <option value="" >Option 3</option>
+                     </select>
+                   </label>
+                   <label class="block text-gray-600 text-sm font-medium mt-6 -m-1">Icon</label>
+                   <span class="block text-gray-600 text-sm mt-2 -m-1 ">The icon to represent this form in web and mobile apps</span>
+                   
+                   <div class="mt-4 h-1/4 w-full max-w-sm px-3 py-6 flex items-center flex-col space-y-6 bg-white border border-slate-200 rounded-lg text-sm shadow-sm
+                   focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+                   disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+                   invalid:border-pink-500 invalid:text-pink-600
+                   focus:invalid:border-pink-500 focus:invalid:ring-pink-500 -m-2">
+                     <img src="./svg nav1/uploadsvg.svg" class="border border-gray-200 rounded-md p-2 shadow-sm hover:border-blue-200" alt="">
+                     <div class="flex flex-col items-center">
+                       <span class="font-semibold flex-col items-center"><a href="" class="text-violet-600 ">Click to upload </a>or drag and drop</span>
+                       <span class="self-center font-semibold">SVG, PNG or JPG</span>
+                     </div>
+                   </div>
+               </form>
+             
+            </div>
+    </div>
+    
+    <script>
+        const list = document.querySelector('.list');
+        const more = document.querySelector('.list > .more');
+        const less = document.querySelector('.list > .less');
+
+        more.addEventListener('click', event => {
+            list.classList.add('expanded');
+            more.style.display = 'none';
+            less.style.display = 'block';
+        });
+
+        less.addEventListener('click', event => {
+            list.classList.remove('expanded');
+            more.style.display = 'block';
+            less.style.display = 'none';
+        });
+    </script>
+  </body>
+</html>
