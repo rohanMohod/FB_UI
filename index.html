@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>new index</title>
+    <title>main index</title>
     <link rel="stylesheet" href="./input.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
-    
     <style>
 
         .inter{
@@ -37,74 +36,73 @@
             cursor: pointer;
             display: none;
         }
+        .background{        
+        background-size: 60px 60px;        
+        background-image:
+        linear-gradient(to right, #E1E1E18F 1px, transparent 1px),
+        linear-gradient(to bottom, #E1E1E18F 1px, transparent 1px);
+        }
+
+    
     </style>
   </head>
-  <body>
+  <body class="background relative">
     <!-- 1. Navigation bar -->
-    <div class="absolute w-full ">
-        <img src="./svg nav1/Grid.svg" alt="background image" class="">
-    </div>
-    <!-- -->
-    <div class="container justify-between relative bg-white xs:w-1/5 sm:w-1/4 md:w-1/3 flex min-w-full shadow-md">
-        <div class="container flex space-x-6 m-1 ">
-            <!-- 1st change.. -->
-            <div class=" flex self-center items-center hover:bg-slate-100 ml-1 p-0.5 py-1 rounded-md ">
-                <img src="./svg nav1/logoMain.svg" class="flex items-center h-8 w-8 " alt="">
-                <div class="self-center">
-                    <span class="inter1 ml-2 self-center whitespace-nowrap">Safety Audit</span>
-                </div>
+    <div class="relative bg-white shadow-md">
+        <div class="flex items-center md:space-x-6 p-1 border w-full">
+           
+            <div class=" flex justify-center items-center md:w-[135.31px] md:h-[27.31px] hover:bg-slate-100 ml-1 rounded-md ">
+                <img src="./svg nav1/logoMain.svg" class="flex items-center h-auto w-auto " alt="">              
+                <span class="inter1 ml-2 flex items-center whitespace-nowrap h-[19px] w-[98px]">Safety Audit</span>             
             </div>
-            <!-- 1st change.. -->
-
-            <!-- 2nd change -->
-            <div class="h-6 w-1 self-center">
+           
+            <div class="h-6 w-[1 self-center">
                 <img src="./svg nav1/Separator.svg" class="h-6 w-1 self-center" alt="">
             </div>
             
-            <div class="flex justify-evenly items-center space-x-0 py-1">
-                <img src="./svg nav1/mobile-alt-solid.svg" class="h-8 w-7 hover:bg-slate-100 p-1 rounded-md" alt="">
-                <img src="./svg nav1/tablet.svg" class="h-7 w-5.5 hover:bg-slate-100 p-1 rounded-md" alt="">
-                <img src="./svg nav1/desktop-solid.svg" class="h-7 w-7 hover:bg-slate-100 p-1 rounded-md" alt="">
+            <div class="flex justify-center space-x-[5px] items-center py-1 w-[93px] h-[39px]">
+                <img src="./svg nav1/mobile-alt-solid.svg" class="h-[18px] w-[18px] hover:bg-slate-100  rounded-md" alt="">
+                <img src="./svg nav1/tablet.svg" class="h-[18px] w-[18px] hover:bg-slate-100 rounded-md" alt="">
+                <img src="./svg nav1/desktop-solid.svg" class="h-[18px] w-[18px] hover:bg-slate-100 rounded-md" alt="">
             </div>
-            <div class="flex space-x-3">
-                <div class="rounded-full flex space-x-1 h-11 self-center border items-center border-gray-300 py-1 px-1 justify-center">
-                    <button id="button1" class="flex items-center space-x-2 rounded-full px-6 py-1 border content-center border-slate-300 hover:border-indigo-300" 
+
+            <!--  -->
+            <div class="flex justify-center items-center xl:space-x-5">
+
+                <div class="rounded-full flex md:w-[248px] md:h-[45px] space-x-1 self-center border items-center border-gray-300 justify-center">
+                    <button id="button1" class="flex justify-center items-center w-[117px] h-[37px] space-x-2 rounded-full px-6 py-1 border content-center border-slate-300 hover:border-indigo-300" 
                     style="background: linear-gradient(97.35deg, #5136F4 0%, #0B8DF4 108.05%);">
                         <img src="./svg nav1/designScript svg/Vector.svg" class="py-1 icon11">
                         <span class="inter font-semibold text-sm text-white">Design</span>
                     </button>
-                    <button id="button2" class="flex space-x-2 rounded-full content-center px-6 py-1.5">
+                    <button id="button2" class="flex justify-center items-center w-[117px] h-[37px] space-x-2 py-1 px-6 rounded-full">
                         <img src="./svg nav1/designScript svg/Vector-1.svg" class="py-1 icon21" alt="">
                         <span class="inter1 font-bold text-sm">Script</span>
                     </button>
                 </div>
-                <div class="flex justify-center space-x-2 my-1  ">
-    
-                    <img src="./svg nav1/shape.svg" class="w-auto h-auto hover:bg-slate-100 p-2 rounded-md " alt="">
-                    <img src="./svg nav1/shape-1.svg" class="w-auto h-auto hover:bg-slate-100 p-2 rounded-md" alt="">
-                    <!-- 3rd change -->
-                    <img src="./svg nav1/Separator.svg" class="h-6 w-1 self-center " alt="">
-                    <img src="./svg nav1/cut.svg" class="w-auto h-auto hover:bg-slate-100 p-2 rounded-md" alt="">
-                    <img src="./svg nav1/copy.svg" class="w-auto h-auto hover:bg-slate-100 p-2 rounded-md" alt="">
-                    <img src="./svg nav1/Add+.svg" class="w-auto h-auto hover:bg-slate-100 p-2 rounded-md" alt="">
-                </div>
-            </div>
-          
-        </div>
-        <!-- 4th change -->
-        <img src="./svg nav1/closeicon.svg" class=" h-4 w-4 self-center mr-2 ml-14" alt="">
-    </div>
-   
-    <!-- 2. Main section -->
 
+                <div class="flex justify-center items-center space-x-[20px]">
+                    <img src="./svg nav1/shape.svg" class="h-auto w-auto hover:bg-slate-100  rounded-md " alt="">
+                    <img src="./svg nav1/shape-1.svg" class="h-auto w-auto hover:bg-slate-100  rounded-md" alt="">
+                    <!-- -->
+                    <img src="./svg nav1/Separator.svg" class="h-6 w-1 self-center " alt="">
+                    
+                    <img src="./svg nav1/cut.svg" class="h-auto w-auto hover:bg-slate-100  rounded-md" alt="">
+                    <img src="./svg nav1/copy.svg" class="h-auto w-auto hover:bg-slate-100  rounded-md" alt="">
+                    <img src="./svg nav1/Add+.svg" class="h-auto w-auto hover:bg-slate-100 rounded-md" alt="">
+                
+                </div>
+                
+            </div>
+            
+            
+        </div>
+    </div>
+      <!-- 2. Main section -->
     <!-- main -->
-    <div class=" container flex justify-between m-0.5 h-full  relative" >
-        <!-- <div class="absolute w-full ">
-            <img src="./svg nav1/Grid.svg" alt="background image" class="">
-        </div> -->
-        
+    <div class=" flex relative" >   
         <!-- toolbar -->
-        <div class="relative flex my-9 h-full w-24 ml-4 flex-shrink-0  bg-white shadow-md"> 
+        <div class="relative flex mt-[55px] h-full w-24 ml-4 flex-shrink-0  bg-white shadow-md"> 
                
             <div class="list flex flex-row flex-wrap space-y-2 items-center">
                 <!-- visible icons -->
@@ -161,23 +159,31 @@
         </div>
 
         <!-- middle section -->
-        <div class="container my-12 relative xs:w-1/5 sm:w-1/4 md:w-1/3 md:mr-20 right-1/3 ">
-            <img src="./svg nav1/device-image/Devices/Light/iPhone 11 Pro.svg" alt="" class="w-5/3">
-        </div>
+        <div class=" px-12 ml-auto mt-[55px] w-[434px] h-[861px] relative">
+            <img src="./svg nav1/device-image/Devices/Light/iPhone 11 Pro.svg" alt="" class="">
         
-        <!-- right -->
-        <div class="container flex-col justify-between xs:w-1/5 sm:w-1/4 md:w-1/3 lg:w-1/4 xl:w-1/4 space-y-6 h-auto pb-72 max-w-md my-1.5 py-2 px-2 bg-white rounded-sm border border-slate-100 top-0 right-0 absolute shadow-md ">
+        </div>      
+         <!-- right -->
+         <div class="flex flex-col relative space-y-6 2xl:w-[391px] 2xl:h-auto pb-72 ml-auto mr-0.5 my-1.5 py-2 px-2 bg-white rounded-sm border border-slate-100 shadow-md ">
             <div class="-ml-2 -mt-3">
              <div class="flex justify-start  space-x-4 ml-3 my-3">
                  <img src="./svg nav1/setting nav/3.svg" class="hover:bg-slate-100 p-2 rounded-md" alt="">
                  <img src="./svg nav1/setting nav/comments.svg" class="hover:bg-slate-100 p-2 rounded-md" alt="">
                  <img src="./svg nav1/setting nav/history-solid.svg" class="hover:bg-slate-100 p-2 rounded-md" alt="">
+
+                 <div class="p-1 h-fit w-fit relative -right-[170px] -top-[55px]">
+                    <img src="./svg nav1/closeicon.svg" class="h-fit w-fit self-center hover:bg-slate-100 p-2" alt="">
+                </div>
              </div>
              
-             <img src="./svg nav1/horrizontal_Line 36.svg" class="ml-3 -mt-1" alt="">
+             <div class="flex flex-row">
+                <img src="./svg nav1/horrizontal_Line 36.svg" class="ml-3 -mt-1" alt="">
+                <img src="./svg nav1/horrizontal_Line 36.svg" class="ml-2 -mt-1 hidden" alt="">
+                <img src="./svg nav1/horrizontal_Line 36.svg" class="ml-2 -mt-1 hidden" alt="">
+             </div>
+
             </div>
              
-     
              <div class="ml-1.5">
                  <span class="inter font-semibold text-2xl ">Form Settings</span>
              </div>
@@ -185,7 +191,8 @@
              <form class=" w-full mr-4 space-y-4 ml-1.5">
                  <div class="flex space-x-3 items-center ">
                     <img src="./svg nav1/checkbox.svg" alt="" class="mt-1">
-                     <label for="checkbox" class="block text-slate-600 font-semibold">Required</label>
+                    <label for="checkbox" class="block text-slate-600 font-semibold">Required</label>
+                 
                   </div>
                  <label class="block max-w-sm space-y-4">
                    <span class="block text-sm font-medium text-slate-600 ">Name</span>
@@ -230,6 +237,7 @@
                </form>
              
             </div>
+
     </div>
     
     <script>
@@ -249,5 +257,6 @@
             less.style.display = 'none';
         });
     </script>
+  
   </body>
 </html>
